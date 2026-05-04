@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity, SafeAreaView, Image } from 'react-native';
 import { Calendar as RNCalendar } from 'react-native-calendars';
-import { Droplet, Plus, Info, ChevronRight, BarChart2, TrendingUp } from 'lucide-react-native';
+import { Droplet, Plus, Info, ChevronRight, ChartBar, TrendingUp } from 'lucide-react-native';
 
 const mockPhase = { name: 'Menstrual Phase', color: '#E8567F', icon: 'droplet', description: 'Your body is shedding the uterine lining. Take it easy.' };
 const mockDaysUntil = 26;
@@ -115,7 +115,7 @@ const CycleTrackerScreen = () => {
         <View className="bg-white border border-gray-100 p-6 rounded-[32px] mb-12 shadow-sm">
           <View className="flex-row justify-between items-center mb-6">
             <Text className="text-lg font-bold text-gray-900 font-outfit">Recent Periods</Text>
-            <TouchableOpacity><BarChart2 size={20} color="#9CA3AF" /></TouchableOpacity>
+            <TouchableOpacity><ChartBar size={20} color="#9CA3AF" /></TouchableOpacity>
           </View>
 
           <View className="gap-y-4">

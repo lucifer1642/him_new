@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView, SafeAreaView, Dimensions } from 'react-native';
 import { LineChart, BarChart, PieChart } from 'react-native-chart-kit';
-import { ChartLine, AlertTriangle, Table as TableIcon } from 'lucide-react-native';
+import { ChartLine, Table as TableIcon } from 'lucide-react-native';
 
 const screenWidth = Dimensions.get('window').width;
 

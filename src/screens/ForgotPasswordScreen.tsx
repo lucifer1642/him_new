@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, SafeAreaView, KeyboardAvoidingView, Platform } from 'react-native';
-import { Mail, ChevronLeft, Heart, PaperPlane, CheckCircle } from 'lucide-react-native';
+import { Mail, ChevronLeft, Heart, Send, CircleCheck } from 'lucide-react-native';
 
 const ForgotPasswordScreen = ({ navigation }: any) => {
   const [email, setEmail] = useState('');
@@ -31,7 +31,7 @@ const ForgotPasswordScreen = ({ navigation }: any) => {
 
         {sent ? (
           <View className="bg-green-50 p-8 rounded-[40px] items-center">
-            <CheckCircle size={48} color="#10B981" />
+            <CircleCheck size={48} color="#10B981" />
             <Text className="text-sm font-bold text-green-800 font-inter text-center mt-4 leading-6">
               If that email exists in our system, a reset link has been sent. Check your inbox.
             </Text>
@@ -63,7 +63,7 @@ const ForgotPasswordScreen = ({ navigation }: any) => {
               onPress={() => setSent(true)}
               className="bg-primary p-6 rounded-[24px] flex-row items-center justify-center shadow-lg shadow-primary/30 mt-2"
             >
-              <PaperPlane size={24} color="white" />
+            <Send size={24} color="white" />
               <Text className="text-white font-bold text-lg ml-2 font-outfit">Send Reset Link</Text>
             </TouchableOpacity>
           </View>
