@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
-import { Book, Fire, Check, Star } from 'lucide-react-native';
+import { Book, Flame, Check, Star } from 'lucide-react-native';
 import Slider from '@react-native-community/slider';
 
 const moods = [
@@ -41,7 +41,7 @@ const MoodJournalScreen = () => {
             <Text className="text-gray-500 font-inter mt-1">Track how you feel each day</Text>
           </View>
           <View className="bg-gray-50 p-3 rounded-2xl flex-row items-center border border-gray-100">
-            <Fire size={20} color="#F4A261" />
+            <Flame size={20} color="#F4A261" />
             <Text className="ml-2 font-bold text-gray-900">5</Text>
           </View>
         </View>

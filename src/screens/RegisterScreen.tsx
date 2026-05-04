@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, SafeAreaView, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
-import { Mail, Lock, User, Calendar as CalendarIcon, Heart, ChevronRight, Hash } from 'lucide-react-native';
+import { Mail, Lock, User, Calendar as CalendarIcon, Heart, ChevronRight, Hash, Droplet } from 'lucide-react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 const RegisterScreen = ({ navigation }: any) => {

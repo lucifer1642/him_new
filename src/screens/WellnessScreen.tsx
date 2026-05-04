@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, SafeAreaView, Image } from 'react-native';
-import { Spa, Heart, BookOpen, Bell, Droplet, Couch, Bed, Apple, Info, Headphones } from 'lucide-react-native';
+import { Leaf, Heart, BookOpen, Bell, Droplet, Sofa, Bed, Apple, Info, Headphones } from 'lucide-react-native';
 
 const categories = ['All', 'Cycle', 'Nutrition', 'Mental Health', 'Fitness', 'Sleep'];
 
@@ -10,7 +10,7 @@ const articles = [
   { cat: 'Mental Health', tag: 'Mental Health', title: 'How Hormones Affect Your Mood', desc: 'Estrogen, progesterone, serotonin — understand the connection.', read: '7 min' },
 ];
 
-const WellnessScreen = () => {
+const WellnessScreen = ({ navigation }: any) => {
   const [selectedCat, setSelectedCat] = useState('All');
 
   return (
@@ -20,7 +20,7 @@ const WellnessScreen = () => {
         {/* Header */}
         <View className="items-center mb-8">
           <View className="flex-row items-center mb-2">
-            <Spa size={32} color="#7CB69E" />
+            <Leaf size={32} color="#7CB69E" />
             <Text className="text-3xl font-bold font-outfit ml-3">Wellness Hub</Text>
           </View>
           <Text className="text-gray-500 font-inter text-center mb-6">
@@ -104,7 +104,7 @@ const WellnessScreen = () => {
               <Text className="text-[11px] font-bold text-gray-700 mt-2">Stay Hydrated</Text>
             </View>
             <View className="items-center w-[35%]">
-              <Couch size={32} color="#7CB69E" />
+              <Sofa size={32} color="#7CB69E" />
               <Text className="text-[11px] font-bold text-gray-700 mt-2">Move Gently</Text>
             </View>
             <View className="items-center w-[35%]">

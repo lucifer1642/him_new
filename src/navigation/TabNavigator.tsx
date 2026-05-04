@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Home, Calendar, Book, MessageSquare, User } from 'lucide-react-native';
+import { Home, Calendar, Book, MessageSquare, User, Gamepad2 } from 'lucide-react-native';
 
 import DashboardScreen from '../screens/DashboardScreen';
 import CycleTrackerScreen from '../screens/CycleTrackerScreen';
@@ -68,7 +68,7 @@ const TabNavigator = () => {
         name="Games" 
         component={GamesScreen} 
         options={{
-          tabBarIcon: ({ color }) => <Gamepad size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Gamepad2 size={24} color={color} />,
         }}
       />
       <Tab.Screen 
